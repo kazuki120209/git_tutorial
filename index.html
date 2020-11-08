@@ -1,0 +1,28 @@
+<h3>GIt チュートリアル</h3>
+<div class="panda">
+    <h4 class="sanrise">
+        sunrise
+    </h4>
+    <br>
+
+
+</div>
+<div class="new-post-2-flash">
+    <div class="tag-party">
+        <%= f.label :"予定日" , :class => 'post-new-name-2' %>
+        <br>
+        <div class="cp_iptxt-2">
+            <label class="ef-2">
+                <%= f.date_select :date, {discard: true}, {:class => "some_css_style"}  %>
+            </label>
+        </div>
+    </div>
+    <div class="tag-party">
+        <%= f.label :"施設名(スポットがない場合はこちらに記入）" , :class => 'post-new-name-2' %><br>
+        <div class="cp_iptxt-2">
+            <label class="ef-2">
+                <%= f.text_field :facility_name, :size => 50 %>
+            </label>
+        </div>
+    </div>
+</div>
